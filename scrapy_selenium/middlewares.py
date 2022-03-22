@@ -75,7 +75,7 @@ class SeleniumMiddleware:
         driver_executable_path = crawler.settings.get('SELENIUM_DRIVER_EXECUTABLE_PATH')
         browser_executable_path = crawler.settings.get('SELENIUM_BROWSER_EXECUTABLE_PATH')
         command_executor = crawler.settings.get('SELENIUM_COMMAND_EXECUTOR')
-        driver_arguments = crawler.settings.get('SELENIUM_DRIVER_ARGUMENTS') + [crawler.settings.get("USER_AGENT")]
+        driver_arguments = crawler.settings.get('SELENIUM_DRIVER_ARGUMENTS')
         driver_experimental_arguments = crawler.settings.get('SELENIUM_DRIVER_EXPERIMENTAL_ARGUMENTS')
 
         if driver_name is None:
